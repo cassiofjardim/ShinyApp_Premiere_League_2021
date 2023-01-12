@@ -1,0 +1,53 @@
+top_right_UI <- function(id) {
+  ns <- NS(id)
+  tagList(
+
+    div(
+      class = 'top_right',
+      style = "grid-area: top_right",
+      div(class = 'header',style = 'display: flex;',
+      h5("LAST 5 GAMES"),
+
+      sliderTextInput(
+        inputId = ns("games_number"),
+        label = "Last Games:",
+        choices = seq(from = 1,
+                      to = 5,
+                      by = 1),
+        selected = 5,
+        grid = TRUE
+      )),
+      htmlOutput(ns('cards_top_right'))
+        )
+  )
+}
+
+top_right_Server <- function(id,app_control_input) {
+  moduleServer(
+    id,
+    function(input, output, session) {
+
+      output$name <- renderUI({
+        div(
+          app_control_input(),
+          style = "font-family: 'Exo 2', sans-serif; display: flex;",
+          class = 'animated_div',
+          tags$img(src = str_replace(
+            paste0('img/',
+                   app_control_input(), '.png'), " ", "_"
+          ),style = 'border-radius:50%; height: 100px;'))
+
+
+      })
+
+      output$cards_top_right <- renderUI({
+
+       cards_players_function(vector = 1:input$games_number,
+                              data = last_five_games_df[[app_control_input()]],
+                              player_team =  app_control_input())
+      })
+
+
+    }
+  )
+}

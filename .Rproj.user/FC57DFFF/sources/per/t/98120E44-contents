@@ -1,0 +1,61 @@
+# https://twitter.com/henrikbengtsson/status/1583520708470067201
+
+library(shiny)
+# library(sortable)
+library(pdftools)
+library(magick)
+
+# thumbs <- magick::image_read_pdf('myfile.pdf', density = 200, pages = 1:3) |>
+#   image_resize("x250")
+#
+#
+# pages_pdf <- 3
+#
+# 1:pages_pdf %>% purrr::map(~ image_write(thumbs[.x],path = paste0('pagina_',.x,'.png'),format = '.png'))
+#
+# thumbs2 <- magick::image_read_pdf('Top_Performers.pdf', density = 200, pages = 1) |>
+#   image_resize("x250")
+#
+# image_write(thumbs2,path = paste0('pagina_Top','.png'),format = '.png')
+
+ui <- fluidPage(
+  fluidRow(
+    column(
+      width = 12,
+      h1("Thumbnail"),
+      # tags$h2("PDF page reorder"),
+      # tags$b("Exercise"),
+      # rank_list_basic,
+      # tags$b("Order"),
+      # verbatimTextOutput("results_basic"),
+      # tags$a(href = 'thumbs/output.pdf', 'Download PDF', target = '_blank'),
+      # imageOutput(outputId = 'thumb'),
+      tags$img(src = 'img/Delete/example_1_1.jpg', width = '100px', height = '100px'),
+      tags$a(href = 'img/Top_Performers.pdf', 'Download PDF', target = '_blank'),
+      tags$img(src = 'img/pagina_2.png', width = '100px', height = '100px'),
+      tags$a(href = 'thumbs/output.pdf', 'Download PDF', target = '_blank'),
+      tags$img(src = 'img/pagina_3.png', width = '100px', height = '100px'),
+      tags$a(href = 'thumbs/output.pdf', 'Download PDF', target = '_blank'),
+      tags$img(src = 'img/pagina_Top.png', width = '100px', height = '100px'),
+      tags$a(href = 'thumbs/output.pdf', 'Download PDF', target = '_blank')
+
+
+
+
+    )
+  )
+)
+
+server <- function(input, output, session) {
+  # output$results_basic <- renderPrint({
+  #   pages <- as.numeric(input$rank_list_basic)
+  #   if(!length(pages)){
+  #     pages <- seq_along(thumbs)
+  #   }
+  #   qpdf::pdf_subset(pdffile, pages = pages, output = file.path('output.pdf'))
+  #   pages
+  # })
+
+}
+
+shinyApp(ui, server)
