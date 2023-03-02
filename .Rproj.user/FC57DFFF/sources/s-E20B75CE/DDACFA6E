@@ -1,0 +1,26 @@
+{
+    "id": "DDACFA6E",
+    "path": "C:/Users/Cassio_1/OneDrive/Github_Projects/ShinyApp_Premiere_League_2021/R/modules/module_league_level.R",
+    "project_path": "R/modules/module_league_level.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1677770616013.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "18,81",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1677771108,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1677771108465,
+    "read_only": false,
+    "read_only_alternatives": []
+}

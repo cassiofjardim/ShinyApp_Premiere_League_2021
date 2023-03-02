@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: whitesmoke;        /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #333F47;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid whitesmoke;  /* creates padding around scroll thumb */
+}
+
+p{
+  /*white-space: nowrap;
+
+  text-overflow: ellipsis;*/
+
+}
+
+
+
+.left_chart .form-group.shiny-input-container label{
+  display: none;
+}
+
+*{
+  font-family: 'Exo 2', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+      font-family: 'Exo 2', sans-serif;
+      text-transform: uppercase;
+}
+
+body{
+    height: fit-content !important;
+    padding: 2em;
+    background-color: #e2cca3;
+    background-image:
+    radial-gradient(at 47% 33%, hsl(39.75, 75%, 73%) 0, transparent 59%),
+    radial-gradient(at 82% 65%, hsl(197.95, 51%, 93%) 0, transparent 55%);
+
+    background: #ffdaa1;
+    background: -webkit-linear-gradient(113deg, #ffdaa1 0%, #a8f0ff 50%, #a8ced5 100%);
+    background: linear-gradient(113deg, #ffdaa1 0%, #a8f0ff 50%, #a8ced5 100%);
+     background: linear-gradient(199deg, #c8102e47 0%, #ffffff 50%, #ffffff 100%);
+}
+
+.horizontal_line{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+
+
+.container-fluid {
+
+    height: fit-content;
+    border-radius: 10px;
+
+    border:2px solid;
+    background: rgba(255,255,255,0.25);
+-webkit-backdrop-filter: blur(8px);
+backdrop-filter: blur(8px);
+border: 1px solid rgba(255,255,255,0.125);
+
+
+padding:0px;
+
+
+}
+
+/*****************************APP FILE HTML**************************************/
+.main_title_div{
+
+padding: 2em;display: flex;
+justify-content: space-between;
+
+}
+
+
+.main_title{
+letter-spacing: 0px;
+    font-weight: 300;
+    color: black;
+    font-weight: 800;
+    font-size: 3em;
+}
+
+.typewriter{
+  display: flex;
+    gap: 1em;
+}
+
+.typewriter .animated_div{
+  font-size: 4em;
+  font-weight: 400;
+  letter-spacing:   2px;
+  white-space: break-spaces;
+  width: 100%;
+  overflow: hidden;
+  /*border-right: .1em solid orange;*/
+  animation: blink .3s  infinite alternate, typing 3s steps(20);
+}
+
+@keyframes blink{
+
+50%{
+  border-color: transparent;
+}
+
+}
+
+@keyframes typing{
+
+from{
+ width: 0%;
+}
+}
+
+.tabbable{
+  width: 100%;
+}
+
+
+div#league_level-ranking {
+    display: flex;
+    gap: 2em;
+}
+
+/*****************************APP FILE HTML**************************************/
+
+.main_grid_panel .league_level,
+.main_grid_panel .top_right,
+.main_grid_panel .bottom_right_two{
+background: white;
+border-radius: 10px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+border: 1px solid rgba(241, 224, 224, 0.67);
+
+padding: 1em;
+}
+
+/*******************************************************************************/
+/**********************LEAGUE LEVEL COLUM***************************************/
+/*******************************************************************************/
+
+
+/**** ROW 1***/
+.main_grid_panel .league_level .champion_stats {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+}
+
+.main_grid_panel .league_level .champion_stats h3,
+.main_grid_panel .league_level .champion_stats h4{
+  font-family: 'Exo 2',
+  sans-serif;
+  display: flex;
+  flex-direction:column;
+  font-weight: 900;
+}
+
+.main_grid_panel .league_level .champion_stats span{
+  padding: .75em 0;
+  width: 7em;
+  color: gray;
+  font-size: .5em;
+  font-weight: 500;
+  padding: 0.75em 0;
+  word-break: inherit;
+  line-height: 1;
+}
+
+/**** ROW 2***/
+
+.main_grid_panel .league_level .chart_table{
+    display: flex;
+    gap: 2em;margin: 2em 0;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.main_grid_panel .league_level .bottom_right_two{
+  height: fit-content;
+
+}
+
+.main_grid_panel .league_level .left_chart{
+    text-align: left;
+}
+
+/* Table*/
+.main_grid_panel .league_level .chart_table{
+    text-align: right;
+    margin-bottom: 1em;
+}
+
+.main_grid_panel .league_level .chart_table .form-group.shiny-input-container.shiny-input-checkboxgroup.shiny-input-container-inline {
+    display: flex;
+    justify-content: end;
+    gap: 0.75em;
+    font-size: .75em;
+    align-items: baseline;
+}
+
+.main_grid_panel .league_level .chart_table button{
+  color: : white !important;
+  background: #C8102E !important;
+  border: none !important;
+  margin-left: 0.25em !important;
+}
+
+.main_grid_panel .league_level .chart_table .rt-pagination-nav button {
+    padding: 0.25em !important;
+    font-size: smaller !important;
+}
+
+/**** ROW 3***/
+.main_grid_panel .league_level .tabpanels_row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+
+}
+
+.main_grid_panel .league_level .tabpanels_row .tabbable{
+  width: 100%;
+}
+
+.main_grid_panel .league_level .tabpanels_row .tabbable h6.percent{
+  display: inline;
+  font-weight: 700;
+  font-size: .75em;
+
+}
+
+.main_grid_panel .league_level .nav-tabs{
+  border:none;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    color: #C8102E;
+    cursor: default;
+    background-color: white;
+    border-radius: 0px;
+    border-color: transparent;
+    border-bottom: 2px solid;
+
+}
+.nav-tabs>li>a,
+.nav-tabs>li>a:focus,
+.nav-tabs>li>a:hover {
+    color:  #484848;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 0px;
+    border-color: transparent;
+    margin: 0px;
+    padding: 0.5em 1em;
+
+}
+
+
+/*BOTTOM RIGHT DIV */
+
+.bottom_right_two h5{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom_right_two .form-group{
+    display: flex;
+    justify-content: end;
+    gap: 0.75em;
+}
+
+.bottom_right_two .shoots  button{
+  color: white !important;
+  background: #C8102E !important;
+  border: none !important;
+  margin-left: 0.25em !important;
+}
+
+.bottom_right_two .rt-pagination-nav button{
+    padding: 0.5em !important;
+    font-size: smaller !important;
+}
+
+
+
+
+
+/*******************************************************************************/
+/********************** RIGHT COLUMN     ***************************************/
+/*******************************************************************************/
+
+.top_right .panels_controls .btn-success{
+  background: #C8102E;
+  border: none;
+  border-radius: 15px !important;
+  font-weight: 600;
+}
+
+.top_right .panels_controls .btn-group-vertical>.btn.active,
+.top_right .panels_controls .btn-group-vertical>.btn:active,
+.top_right .panels_controls .btn-group-vertical>.btn:focus,
+.top_right .panels_controls .btn-group-vertical>.btn:hover,
+.top_right .panels_controls .btn-group>.btn.active,
+.top_right .panels_controls .btn-group>.btn:active,
+.top_right .panels_controls .btn-group>.btn:focus,
+.top_right .panels_controls .btn-group>.btn:hover{
+
+  background:black;
+  color: white;
+  font-weight: 600;
+
+}
+
+.top_right .panels_controls .btn-group button.btn{
+  margin: .25em 1em;
+      font-size: .85em;
+
+}
+
+.top_right #top_right-cards_top_right {
+    height: 350px;
+    /*overflow-y: scroll;*/
+}
+
+.top_right  #top_right-cards_top_right #tabset_panel .tabbable ul {
+    font-weight: 700;
+}
+
+
+
+
+@media (width >= 1550px ) {
+
+
+}
+
+@media (1200px <= width <= 1549px) {
+
+
+}
+
+@media ( width <= 1199px){
+
+  .chart_table{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2em;margin: 2em 0;
+    border-bottom: 1px solid lightgray;
+
+}
+
+.Reactable {
+    width: 700px !important;
+    margin: 0 auto;
+}
+
+
+}
+

@@ -1,0 +1,14 @@
+name: ShinyApp_Premiere_League_2021
+title: ShinyApp_Premiere_League_2021
+username:
+account: cfjardim
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7906975
+bundleId: 6907324
+url: https://cfjardim.shinyapps.io/ShinyApp_Premiere_League_2021/
+when: 1677771159.58512
+lastSyncTime: 1677771159.58513
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: DELETE

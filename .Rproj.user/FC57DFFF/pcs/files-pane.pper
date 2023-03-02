@@ -1,9 +1,13 @@
 {
     "sortOrder": [
         {
+            "columnIndex": 4,
+            "ascending": false
+        },
+        {
             "columnIndex": 2,
             "ascending": false
         }
     ],
-    "path": "C:/Users/Cassio_1/OneDrive/Github_Projects/ShinyApp_Premiere_League_2021/www/data"
+    "path": "C:/Users/Cassio_1/OneDrive/Github_Projects/ShinyApp_Premiere_League_2021"
 }
